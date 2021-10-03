@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+
+body,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+  background: #fef9f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.block1{
+
+
+display: block;
+position: absolute;
+top: 100px;
+left: 50px;
+background: #fef9f3;
+}
+.block1 h1{
+font-size: 50px;
+font-weight: 100px;
+
+}
+
+.body{
+background: #fef9f3;
+}
+
+.block2 .photo{
+border-radius: 40%;
+position: absolute;
+left: 1000px;
+top: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper{
+  display: flex;
+background: #fef9f3;
+}
+.wrapper .static-txt{
+  color: #000;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 80px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fef9f3;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
